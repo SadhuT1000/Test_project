@@ -2,6 +2,8 @@ import math
 
 
 class Circle:
+    """ Класс вычисляет площадь круга по радиусу"""
+
     def __init__(self, radius):
         if radius <= 0:
             raise ValueError("Радиус должен быть положительным")
@@ -12,6 +14,9 @@ class Circle:
 
 
 class Triangle:
+
+    """ Класс вычисляет площадь треугольника по трем сторонам"""
+
     def __init__(self, a, b, c):
         sides = [a, b, c]
         if any(side <= 0 for side in sides):
